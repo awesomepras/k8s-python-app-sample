@@ -1,2 +1,3 @@
-# k8s-python-app-sample
-A simple python app to be build and deploy in k8s
+# hello-python
+Very simple hello world python Flask application.  
+[Source](https://kubernetes.io/blog/2019/07/23/get-started-with-kubernetes-using-python/)
