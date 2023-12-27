@@ -1,7 +1,7 @@
 # Use a Python image to create a virtual environment
 FROM python:3.9 as builder
 
-WORKDIR /app
+WORKDIR $GITHUB_WORKSPACE/app
 
 # Add required files (assuming 'app' directory contains all necessary files)
 ADD app /app
