@@ -4,7 +4,7 @@ FROM python:3.9 as builder
 WORKDIR $GITHUB_WORKSPACE/app
 
 # Add required files (assuming 'app' directory contains all necessary files)
-ADD app /app
+ADD $GITHUB_WORKSPACE/app /app
 
 # Create and activate a virtual environment
 RUN python3 -m venv /venv
