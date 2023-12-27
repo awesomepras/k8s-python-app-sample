@@ -1,10 +1,10 @@
 # Use a Python image to create a virtual environment
 FROM python:3.9 as builder
 
-WORKDIR $GITHUB_WORKSPACE/app
+WORKDIR /app
 
 # Add required files (assuming 'app' directory contains all necessary files)
-ADD $GITHUB_WORKSPACE/app /app
+ADD $GITHUB_WORKSPACE/docker/app /app
 
 # Create and activate a virtual environment
 RUN python3 -m venv /venv
